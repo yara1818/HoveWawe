@@ -1,0 +1,93 @@
+.header {
+    background: url('/src/img/header.png') center (center / cover) no-repeat;
+    z-index: 2;
+    color: $white;
+    .nav {
+        height: 63px;
+        background-color: $nav;
+        // filter: blur(4px);
+        .container {
+            padding: 20px 82px 0px 77px;
+        }
+        .menu {
+            display: flex;
+            .nav__link {
+                list-style-type: none;
+                .link {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    margin-right: 67px;
+                    text-decoration: none;
+                    color: $white;
+                }
+                .link-nav {
+                    margin-top: 3px;
+                    display: block;
+                }
+                .link--active {
+                    text-decoration: underline;
+                    font-weight: 500;
+                }
+                .logo {
+                    font-family: Inter;
+                    font-size: 24px;
+                    font-weight: 500;  
+                    margin-right: 850px;                 
+                }
+            }
+        }
+    }
+    .container {
+        padding: 150px 0px 15px 82px;
+    }
+    .header__btn {
+        border-radius: 30px;
+        background-color: $btn;
+        border: none;
+        width: 250px;
+        height: 50px;
+        font-weight: 500;
+        font-size: 18px;
+        .link {
+            text-decoration: none;
+            color: $white
+        }
+    }
+    .header__title {
+        width: 829px;
+        margin-bottom: 50px;
+        .title {
+            font-size: 35px;
+            font-weight: 400;
+            span {
+                font-size: 37px;
+                font-weight: 500;
+            } 
+        }  
+    }
+    .social {
+        margin-left: 20px;
+        width: 200px;
+        margin-top: 50px;
+        .title {
+            padding: 0px 0px 5px 3px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .social__menu {
+            display: flex;
+            .social__menu-link {
+                margin-top: 5px;
+                list-style-type: none;
+                margin-right: 15px;
+                .link {
+                    img {
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
