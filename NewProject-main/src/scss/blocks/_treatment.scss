@@ -1,0 +1,45 @@
+.section-treatment {
+    background: $section;
+    color: $white;
+    .container {
+        padding: 50px 17px 40px 17px;
+        .title {
+            @include title;
+        }
+        .treatment__blocks {
+            padding-top: 30px;
+            .block {
+                width: 95%;
+                border: 1px $white solid;
+                margin: 0 auto;
+                position: relative;
+                .container {
+                    padding: 30px 50px 15px 50px;
+                    .block__title {
+                        text-align: center;
+                        font-size: 28px;
+                        font-weight: 600;
+                    }
+                    .block__line {
+                        display: flex;
+                        .desckr {
+                            padding-top: 30px;
+                            text-align: left;
+                            font-size: 23px;
+                            line-height: 30px;
+                            font-weight: 500;
+                            width: 80%;
+                        }
+                        .img {
+                            img {
+                                position: absolute;
+                                right: 10%;
+                                bottom: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
