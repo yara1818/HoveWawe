@@ -1,0 +1,30 @@
+.section-what {
+    color: $white;
+    background: $section;
+    height: 280px;
+    .container {
+        padding: 33px 104px 73px 100px;
+        .title {
+            @include title;
+        }
+        .what__text {
+            position: relative;
+            display: flex;
+            padding-top: 33px;
+            .text {
+                width: 87%;
+                // text-align: left;
+                font-size: 25px;
+                font-weight: 500;
+                letter-spacing: 15%;
+                line-height: 35px;
+            }
+            .img {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                height: 175px;
+            }
+        }
+    }
+}
