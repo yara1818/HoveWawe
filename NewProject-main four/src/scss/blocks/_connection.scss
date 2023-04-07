@@ -1,0 +1,96 @@
+.section-connection {
+    color: $white;
+    background-color: $section;
+    height: 925px;
+    .container {
+        padding: 50px 100px 150px 100px;
+        .title {
+            @include title;
+            padding-bottom: 50px;
+        }
+        .connection__form {
+            border: 2px $white solid;
+            margin: 0 auto;
+            text-align: center;
+            padding: 15px 15px;
+            width: 500px;
+            background-color: $form;
+            border-radius: 20px;
+            .form__title {
+                padding-top: 15px;
+                font-size: 25px;
+                font-weight: 600;
+                text-align: center;
+            }
+            .form__subtitle {
+                padding-top: 40px;
+                font-size: 22px;
+                font-weight: 600;
+            }
+            .logo {
+                position: relative;
+                img {
+                    &:hover {
+                        transform: scale(1.2);
+                        transition: all .3s;
+                    }
+                    margin: 0 auto;
+                    display: block;
+                }
+            }
+            form {
+                padding-top: 40px;
+                .input {
+                    margin-bottom: 30px;
+                    background-color: $section2;
+                    color: $white;
+                    font-size: 21px;
+                    font-weight: 500;
+                    border-radius: 20px;
+                    padding-left: 10px;
+                    border: 1px $white solid;
+                    width: 80%;
+                    height: 45px;
+                }
+                .btn {
+                    @include btn;
+                    border: 1px $white solid;
+                    &:hover {
+                        -webkit-transform: translateY(-4px);
+                        transform: translateY(-4px);
+                        transition: all .3s;
+                        text-decoration: underline;
+                        background-color: $hoverbtn;
+                    }
+                }
+            }
+        }
+        .connection__line {
+            padding: 35px 25px;
+            border: 1px $white solid;
+            border-radius: 15px;
+            display: flex;
+            margin-top: 40px;
+            .desckr {
+                font-size: 23px;
+                font-weight: 500;
+                width: 80%;
+                line-height: 30px;
+            }
+            .img {
+                margin-left: 100px;
+                position: relative;
+                img {
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: all .3s;
+                    }
+                    height: 125px;
+                    width: 125px;
+                    position: absolute;
+                    top: -30%;
+                }
+            }
+        }
+    }
+}

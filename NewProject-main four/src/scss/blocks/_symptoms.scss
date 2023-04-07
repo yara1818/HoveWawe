@@ -1,0 +1,40 @@
+.section-symptoms {
+    color: $white;
+    height: 555px;
+    background: $section2;
+    .container {
+        padding: 20px 0px 45px 120px;
+        .title {
+            @include title;
+        }
+        .symptoms__descr {
+            position: relative;
+            padding-top: 50px;
+            display: flex;
+            .symptoms {
+                .example {
+                    font-size: 22px;
+                    font-weight: 500;
+                    line-height: 35px;          
+                }
+            }
+            img {
+                position: absolute;
+                right: 10%;
+                top: 10%;
+                &:hover {
+                    transform: scale(1.2);
+                    transition: all .3s;
+                }
+            }
+        }
+        .symptoms__subtitle {
+            padding-top: 50px;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 30px;
+            width: 50%;
+            text-decoration: underline;
+        }
+    }
+}

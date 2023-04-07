@@ -1,0 +1,19 @@
+@mixin title {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 10%;
+}
+
+@mixin btn {
+    border-radius: 30px;
+    background-color: $btn;
+    border: none;
+    width: 250px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    color: $white;
+    cursor: pointer;
+    border: 1px $white solid;
+}

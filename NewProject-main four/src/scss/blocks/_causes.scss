@@ -1,0 +1,43 @@
+.section-causes {
+    background: $section;
+    color: $white;
+    .container {
+        padding: 50px 35px 50px 120px;
+        .title {
+            @include title;
+        }
+        .causes {
+            padding-top: 30px;
+            .text__title {
+                font-size: 28px;
+                font-weight: 600;
+            }
+            .causes__text {
+                position: relative;
+                display: flex;
+                .img {
+                    img {
+                        right: 10%;
+                        top: -10%;
+                        position: absolute;
+                        &:hover {
+                            transform: scale(1.2);
+                            transition: all .3s;
+                        }
+                    }
+                }
+                .examples {
+                    padding-top: 20px;
+                    .example {
+                        line-height: 35px;
+                        letter-spacing: 10%;
+                        font-size: 22px;
+                        font-weight: 500;
+                        padding-top: 3px;
+                        margin-left: 65px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.section-treatment {
+    background: $section2;
+    color: $white;
+    .container {
+        padding: 50px 17px 40px 17px;
+        .title {
+            @include title;
+        }
+        .treatment__blocks {
+            padding-top: 30px;
+            .block__info {
+                width: 95%;
+                border: 1px $white solid;
+                margin: 0 auto;
+                position: relative;
+                border-radius: 15px;
+                margin-bottom: 25px;
+                .block__container {
+                    padding: 15px 50px 15px 50px;
+                    .info__title {
+                        text-align: center;
+                        font-size: 28px;
+                        font-weight: 600;
+                    }
+                    .block__line {
+                        display: flex;
+                        .info__desckr {
+                            padding-top: 30px;
+                            text-align: left;
+                            font-size: 23px;
+                            line-height: 30px;
+                            font-weight: 500;
+                            width: 80%;
+                        }
+                        .info__img {
+                            img {
+                                &:hover {
+                                    transform: scale(1.2);
+                                    transition: all .3s;
+                                }
+                                position: absolute;
+                                right: 5%;
+                                bottom: 15%;
+                            }
+                        }
+                    }
+                }
+            }
+            .block {
+                width: 75%;
+                border: 1px $white solid;
+                margin: 0 auto;
+                border-radius: 15px;
+                .block__container {
+                    padding: 15px 15px 15px 15px;
+                    .warring__title {
+                        text-align: center;
+                        font-size: 30px;
+                        font-weight: 700;
+                    }
+                    .block__line {
+                        padding-top: 20px;
+                        text-align: center;
+                        .warring__desckr {
+                            font-size: 25px;
+                            font-weight: 500;
+                            line-height: 30px;
+                            letter-spacing: 10%;
+                        }
+                        .warring__subtitle {
+                            text-align: center;
+                            padding-top: 20px;
+                            font-size: 26px;
+                            font-weight: 500;
+                            text-decoration: underline;
+                            a {
+                                text-decoration: none;
+                                color: $white;
+                                &:hover {
+                                    font-size: 27px;
+                                    font-weight: 600;
+                                    text-decoration: underline;
+                                    transition: all .3s;
+                                }
+                            }
+                            span {
+                                text-transform: uppercase;
+                                font-size: 24px;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
